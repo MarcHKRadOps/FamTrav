@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <script async src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+        <script>
+            window.googletag = window.googletag || {cmd: []};
+            googletag.cmd.push(function() {
+                var mapLeader = googletag.sizeMapping().
+                    addSize([0, 0], []).
+                    addSize([740, 0], [[728, 90]]).
+                    addSize([1000, 0], [[970, 250],[970,90],[728,90]]).
+                    build();
+                var mapSticky = googletag.sizeMapping().
+                    addSize([0, 0], [[320,50]]).
+                    addSize([740, 0], [[970,90],[728,90]]).
+                    build();
+                var mapRect = googletag.sizeMapping().
+                    addSize([0, 0], [[300, 250],[320,50],[320,100]]).
+                    addSize([740, 0], []).
+                    build();
+                googletag.defineSlot('/54911287/FT_Desktop/header', [728,90],'ad-header').defineSizeMapping(mapLeader).addService(googletag.pubads());
+                googletag.defineSlot('/54911287/FT_Desktop/footer', [728,90],'ad-footer').defineSizeMapping(mapLeader).addService(googletag.pubads());
+                googletag.defineSlot('/54911287/FT_Desktop/sticky', [728,90],'ad-sticky').defineSizeMapping(mapSticky).addService(googletag.pubads());
+                googletag.defineSlot('/54911287/FT_Mobile/header', [300,250],'ad-header_mobile').defineSizeMapping(mapRect).addService(googletag.pubads());
+                googletag.defineSlot('/54911287/FT_Mobile/footer', [300,250],'ad-footer_mobile').defineSizeMapping(mapRect).addService(googletag.pubads());
+                googletag.defineSlot('/54911287/FT_Mobile/square', [300,250],'ad-square_mobile').defineSizeMapping(mapRect).addService(googletag.pubads());
+                googletag.defineSlot('/54911287/FT_inread_1x1', [1, 1], 'ad-inread').addService(googletag.pubads());
+                googletag.pubads().enableSingleRequest();
+                //googletag.pubads().collapseEmptyDivs(true);
+
+                googletag.enableServices();
+            });
+
+        </script>
+        <style>
+            * {margin:0;padding:0;}
+        </style>
+    </head>
+
+    <body>
+
+        <h2 style='padding: 20px 0px;'>Family Traveller test</h2>
+        <h5>inread</h5>
+        <div id='ad-inread'>
+            <script type='text/javascript'>
+                googletag.cmd.push(function() {
+                    googletag.display('ad-inread');
+                });
+            </script>
+        </div>
+        <h5>desktop ads</h5>
+        <div id='ad-header'>
+            <script type='text/javascript'>
+                googletag.cmd.push(function() {
+                    googletag.display('ad-header');
+                });
+            </script>
+        </div>
+        <div id='ad-footer'>
+            <script type='text/javascript'>
+                googletag.cmd.push(function() {
+                    googletag.display('ad-footer');
+                });
+            </script>
+        </div>
+        <h5>Mobile ads</h5>
+        <div id='ad-header_mobile'>
+            <script type='text/javascript'>
+                googletag.cmd.push(function() {
+                    googletag.display('ad-header_mobile');
+                });
+            </script>
+        </div>
+        <div id='ad-footer_mobile'>
+            <script type='text/javascript'>
+                googletag.cmd.push(function() {
+                    googletag.display('ad-footer_mobile');
+                });
+            </script>
+        </div>
+        <div id='ad-square_mobile'>
+            <script type='text/javascript'>
+                googletag.cmd.push(function() {
+                    googletag.display('ad-square_mobile');
+                });
+            </script>
+        </div>
+        <div class="sticky-ad-container" style="position:-webkit-sticky; position:sticky; bottom: 0; background-color: lightblue; margin-top: 20px;z-index:22 !important;">
+            <div id='ad-sticky' style="margin: 0 auto;background-color: lightgrey">
+                <script type='text/javascript'>
+                    googletag.cmd.push(function() {
+                        googletag.display('ad-sticky');
+                    });
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
